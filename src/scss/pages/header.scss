@@ -1,0 +1,58 @@
+@import '../vars';
+
+// .avatar__img {
+// 	border-radius: 50%;
+// 	background-position: center;
+// }
+
+.header__img {
+	z-index: 99;
+}
+
+.avatar {
+	height: 120px;
+	width: 120px;
+	background: url(../img/content/avatar.png) 50% 50% no-repeat;
+	border: 1px solid rgba(#3c2c00, .25);
+	border-radius: 50%;  
+}
+
+// .citation {
+
+	.citation__box {
+		position: relative;
+		line-height: 1.2;
+		padding: 5px;
+		padding-left: 25%;
+		border: 1px solid rgba(#3c2c00, .25);
+		border-radius: 5px;
+		position: relative;
+		width: 125%;
+		right: 25%;
+		background-color: #fffbc8;
+		z-index: 1; 
+	}
+
+	.desc-citation {
+		position: relative;
+		left: 0;
+	} 
+
+.skill-element {
+	line-height: 2;
+
+	&__name {
+		position: relative;
+		left: -1px;
+		z-index: 1;
+		
+		&--bg-green {
+			background-color: rgba(#3CB305, .4)
+		}
+
+		&--bg-blue {
+			background-color: rgba(#30B6EE, .4) 
+		}
+	}
+}
+// }

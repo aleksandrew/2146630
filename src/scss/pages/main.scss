@@ -1,0 +1,72 @@
+@import '../vars';
+
+.reivew-desc__link {
+	text-decoration: underline;
+}
+
+.icon {
+	fill: #73b4d5;
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+
+
+.comment {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px; 
+
+	&__top {
+		display: flex;
+		align-items: baseline
+	}
+}
+
+.comment-name {
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #333333; 
+	margin-right: 10px;
+}
+
+.comment-date {
+	font-size: 1.1rem;
+	color: #808080;
+}
+
+.comment-field {
+	padding: 10px;
+	background-color: #F2FBFF;
+	border: 1px solid #DADADA;
+	font-size: 1.4rem;
+	line-height: 1.35;
+	z-index: 100;
+	position: relative;
+
+	&::before {
+		z-index: 10;
+		content: "";
+		display: block;
+		width: 0; 
+		height: 0;
+		border-bottom: 10px solid #F2FBFF;
+		border-right: 10px solid transparent;
+		position: absolute; 
+    top: -9px;
+    left: 20px; 
+	}
+
+	&::after {
+		z-index: 1;
+		content: "";
+		display: block;
+		width: 0;  
+		height: 0;
+		border-bottom: 11px solid #DADADA;
+		border-right: 11px solid transparent;
+		position: absolute;
+    top: -11px;
+    left: 19px;
+	}
+}
