@@ -20,9 +20,9 @@ html {
 
   font-size: 62.5%; // 10px
 
-  //@media screen and (width <= 992px) {
+  // @media screen and (width <= 992px) {
   //  font-size: 56.25%; // 9px
-  //}
+  // }
   //
   //@media screen and (width <= 768px) {
   //  font-size: 50%; // 8px
@@ -38,7 +38,8 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
 
   width: 100%;
   min-width: 320px;
@@ -84,4 +85,8 @@ ul {
 img {
   width: 100%;
   height: auto;
+}
+
+a {
+	-webkit-tap-highlight-color: transparent;
 }
