@@ -38,7 +38,8 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
 
   width: 100%;
   min-width: 320px;
@@ -84,4 +85,8 @@ ul {
 img {
   width: 100%;
   height: auto;
+}
+
+a {
+	-webkit-tap-highlight-color: transparent;
 }
