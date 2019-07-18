@@ -13,16 +13,6 @@
 	@@include('./html/header.html') 
 	@@include('./html/main.html') 
 	@@include('./html/footer.html') 
-	
-	
-	<script src="/socket.io/socket.io.js"></script>
-<script>
-var socket = io('http://localhost:3000'); // <-- хост:порт
-socket.on('news',function (data) {
-    console.log(data);
-    socket.emit('my other event',{my:'data'});
-});
-</script>
 
   <script src="./js/commons.js"></script>
   <script src="./js/index.js"></script>
